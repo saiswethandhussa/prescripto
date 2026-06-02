@@ -205,7 +205,7 @@ if(!appointmentData||appointmentData.cancelled){
 //creating options for razorpay payment
 const options={
   amount:appointmentData.amount*100,
-  currency:process.env.currency,
+  currency:process.env.CURRENCY,
   receipt:appointmentId,
 }
 //creating of an order
